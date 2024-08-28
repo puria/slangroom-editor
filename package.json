@@ -1,0 +1,17 @@
+{
+  "name": "slangroom-editor",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "codemirror": "^6.0.1",
+    "codemirror-lang-slangroom": "^1.0.1",
+    "rollup": "^4.21.1"
+  }
+}
