@@ -9,7 +9,8 @@ bun install
 To run:
 
 ```bash
-bun run index.ts
+bun run rollup -c
+python -m http.server 5005
 ```
 
-This project was created using `bun init` in bun v1.1.21. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+then open your browser on http://127.0.0.1:5005/
