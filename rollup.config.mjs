@@ -1,9 +1,20 @@
-import { nodeResolve } from "@rollup/plugin-node-resolve"
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+
 export default {
   input: "./editor.mjs",
   output: {
     file: "./editor.bundle.js",
-    format: "iife"
+    format: "iife",
   },
-  plugins: [nodeResolve()]
-}
+  plugins: [
+    nodeResolve({
+      dedupe: [
+        "@codemirror/state",
+        "@codemirror/language",
+        "@lezer/highlight",
+        "@lezer/lr",
+        "@codemirror/autocomplete",
+      ],
+    }),
+  ],
+};
